@@ -27,7 +27,7 @@ async function run() {
 // run().catch(console.error);
 
 const app = express();
-const port = 3000;
+const port = 3001;
 
 // JSON gövdesini işlemek için middleware
 app.use(express.json());
