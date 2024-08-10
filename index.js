@@ -1,5 +1,6 @@
 import { addItem, removeItem, getItems } from "./db.js";
 import express from "express";
+import cors from "cors";
 
 async function run() {
   // Yeni bir öğe ekleyin
@@ -27,6 +28,7 @@ async function run() {
 // run().catch(console.error);
 
 const app = express();
+app.use(cors());
 const port = 3001;
 
 // JSON gövdesini işlemek için middleware
